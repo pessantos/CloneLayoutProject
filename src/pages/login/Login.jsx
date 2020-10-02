@@ -23,16 +23,16 @@ export default function Login() {
 
                 <View style={styles.input}>
                     <TextInput
-                        placeholderTextColor="#FFF"
+                        placeholderTextColor='#8A05BE'
                         style={styles.inputText}
                         placeholder="Digite seu CPF" />
 
                     <TextInput
-                        placeholderTextColor="#FFF"
+                        placeholderTextColor='#8A05BE'
                         style={styles.inputText}
                         placeholder="Digite sua senha" />
                 </View>
-
+               
                 <View >
                     <TouchableOpacity style={styles.btn} onPress={onPress}>
                         <Text style={styles.btnText}>Continuar</Text>
@@ -65,17 +65,21 @@ export default function Login() {
         },
 
         input: {
-            display: "flex", justifyContent: 'space-around', alignSelf: 'center', marginTop: 25, marginBottom: 20,
+            display: "flex", justifyContent: 'space-around', alignSelf: 'center', marginTop: 0, marginBottom: 20,
+            backgroundColor: "white",
         },
 
         inputText: {
-            borderBottomWidth: 1, borderColor: '#fff', padding: 30, margin: 10, width: 300, marginTop: 5,
+            borderBottomWidth: 1, borderColor: '#8A05BE', padding: 35, margin: 14.5, width: 300, marginTop: 5, backgroundColor: "white",
         },
         loginText: {
-            fontSize: 40,
-            color: "white",
-            marginTop: 60,
+            fontSize: 35,
+            color: '#8A05BE',
+            marginTop: 60, paddingTop: 10,
+            backgroundColor: "white", paddingHorizontal: 58, 
+                    
         },
+                     
         btn: {
             backgroundColor: '#fff',
             paddingHorizontal: 120,
